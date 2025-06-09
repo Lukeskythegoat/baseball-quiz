@@ -1,31 +1,43 @@
-body {
-    font-family: Arial, sans-serif;
-    background-image: url('images/baseball.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+/* General page styles */
+html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
     text-align: center;
+    font-family: Arial, sans-serif;
+
+    /* Background image setup */
+    background-image: url("images/baseball.jpg");
+    background-color: #f0f0f0; /* Fallback if image fails */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
-/*ai helped to add background and get in correct pos*/
+
+/* Main content container */
 .container {
     max-width: 500px;
     margin: 50px auto;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px #ccc;
+
+    /* Semi-transparent background to see image through */
+    background-color: rgba(255, 255, 255, 0.85);
 }
 
+/* Heading styles */
 h1 {
     color: #333;
 }
 
+/* Question block */
 .question {
     font-size: 18px;
     margin-bottom: 20px;
 }
 
+/* Input field */
 .option-input {
     padding: 10px;
     font-size: 16px;
@@ -33,28 +45,21 @@ h1 {
     margin-bottom: 20px;
 }
 
+/* Next button */
 #next {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
 }
 
+/* Results display */
 #result {
     margin-top: 15px;
     font-size: 16px;
 }
 
+/* Final score display */
 #final-score {
     margin-top: 25px;
     font-size: 20px;
-    font-weight: bold;
-}
-
-.highlight {
-    color: green;
-    font-weight: bold;
-}
-
-html, body {
-    height: 100%;
-}
+    font-weight:
