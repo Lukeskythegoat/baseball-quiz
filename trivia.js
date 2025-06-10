@@ -57,13 +57,18 @@ function showFinalScore() {
     nextButton.style.display = "none";
     resultElement.textContent = "";
 
-    let message;
-    if (score <= 4) {
-        message = "You're a rookie!";
-    } else if (score <= 8) {
-        message = "You're an all star!";
-    } else {
-        message = "You're a hall of famer!";
+   const messages = [
+        { min: 0, max: 4, text: "You're a rookie!" },
+        { min: 5, max: 8, text: "You're an all star!" },
+        { min: 9, max: 10, text: "You're a hall of famer!" }
+    ];
+
+    let message = "";
+    for (let i = 0; i < messages.length; i++) {
+        if (score >= messages[i].min && score <= messages[i].max) {
+            message = messages[i].text;
+            break;
+        }
     }
 
     finalScoreElement.innerHTML = `Your final score: <strong>${score}/10</strong><br>${message}`;
