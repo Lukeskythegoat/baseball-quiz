@@ -26,13 +26,13 @@ function showQuestion() {
     optionsElement.innerHTML = `
         <input type="text" id="userAnswer" placeholder="Type your answer..." class="option-input">
     `;
-    nextButton.textContent = currentQuestion < questions.length - 1 ? "Submit" : "Finish";
+    nextButton.textContent = currentQuestion < questions.length - 1 ? "Submit" : "Finish";// ai helped me make the button text change depending on the last question
     resultElement.textContent = "";
     finalScoreElement.textContent = "";
 }
 
 function checkAnswer() {
-    const userInput = document.getElementById("userAnswer").value.trim().toLowerCase();
+    const userInput = document.getElementById("userAnswer").value.trim().toLowerCase();// ai helped to use .trim() and .toLowerCase() to make input checking easier
     const correctAnswer = questions[currentQuestion].answer;
 
     if (userInput === correctAnswer) {
@@ -45,7 +45,7 @@ function checkAnswer() {
     currentQuestion++;
 
     if (currentQuestion < questions.length) {
-        setTimeout(showQuestion, 1500);
+        setTimeout(showQuestion, 1500);// ai helped me use settimeout to add a small delay before going to next
     } else {
         setTimeout(showFinalScore, 1500);
     }
