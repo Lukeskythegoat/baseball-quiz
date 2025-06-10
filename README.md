@@ -11,6 +11,6 @@ my file structure has baseball-quiz/ as the parent directory,it includes the fil
 to setup the website simply go to "https://lukeskythegoat.github.io/baseball-quiz/index.html" once your on the site you can start your quiz with no other set up nessesary.please read the how to play instructions before attempting the quiz to understand the proper answer input form.
 
 credits:
-coded my me luke calvin
+coded by me luke calvin
 gavin johnson(mini taran) helped think of some of the questions
 chat gbt helped me where stated in the comments
